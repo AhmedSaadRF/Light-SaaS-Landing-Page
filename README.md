@@ -54,7 +54,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 7_Finish Product Show Case Section.  
 8_Add Product Show Case Style Classes.  
 9_Finish Pricing Section.  
-
+10_Add Pricing Style Classes.  
 
 
   
