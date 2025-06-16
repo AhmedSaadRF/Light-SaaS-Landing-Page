@@ -1,3 +1,3 @@
-export const Navbar = () => {
+export const Header = () => {
   return null;
 };
