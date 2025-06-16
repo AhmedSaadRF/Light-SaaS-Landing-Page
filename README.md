@@ -63,6 +63,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 16_Add Footer Style Classes.  
 17_Finish Hero Section Animation.  
 18_Finish Logo Ticker Section Animation.  
+19_Finish Product Show Case Section Animation.  
 
 
 
