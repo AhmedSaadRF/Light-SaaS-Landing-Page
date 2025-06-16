@@ -44,6 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Steps to Create Project
 *_Upload Start Up Project Files.  
 1_Finish Header Section.  
+2_Add Style Classes.  
 
 
 
