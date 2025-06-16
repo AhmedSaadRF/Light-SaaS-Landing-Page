@@ -61,7 +61,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 14_Add Call To Action Style Classes.  
 15_Finish Footer Section.  
 16_Add Footer Style Classes.  
-
+17_Finish Hero Section Animation.  
 
 
 
