@@ -56,7 +56,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 9_Finish Pricing Section.  
 10_Add Pricing Style Classes.  
 11_Finish Testimonials Section.  
-
+12_Add Testimonials Style Classes.  
 
 
 
