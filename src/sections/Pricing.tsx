@@ -1,3 +1,6 @@
+import CheckIcon from '@/assets/check.svg'
+import { twMerge } from 'tailwind-merge';
+
 const pricingTiers = [
   {
     title: "Free",
@@ -51,5 +54,41 @@ const pricingTiers = [
 ];
 
 export const Pricing = () => {
-  return null;
+  return (
+    <section>
+      <div>
+        <div>
+          <h2 >Pricing</h2>
+          <p >Free forever. Upgrade for unlimited tasks, better security, and exclusive features.</p>
+        </div>
+        <div>
+          {pricingTiers.map(({ title, monthlyPrice, buttonText, popular, inverse, features }) => (
+            <div key={monthlyPrice}>
+              <div>
+                <h3>{title}</h3>
+                {popular === true && (
+                  <div>
+                    <span>Popular</span>
+                  </div>
+                )}
+              </div>
+              <div className='flex items-baseline gap-1 mt-[30px]'>
+                <span>${monthlyPrice}</span>
+                <span>/month</span>
+              </div>
+              <button>{buttonText}</button>
+              <ul>
+                {features.map((feature) => (
+                  <li key={feature}>
+                    <CheckIcon />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
