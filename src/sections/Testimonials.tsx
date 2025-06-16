@@ -7,6 +7,8 @@ import avatar6 from "@/assets/avatar-6.png";
 import avatar7 from "@/assets/avatar-7.png";
 import avatar8 from "@/assets/avatar-8.png";
 import avatar9 from "@/assets/avatar-9.png";
+import Image from "next/image";
+import { twMerge } from "tailwind-merge";
 
 const testimonials = [
   {
@@ -65,6 +67,44 @@ const testimonials = [
   },
 ];
 
+const firstColumn = testimonials.slice(0, 3)
+const secondColumn = testimonials.slice(3, 6)
+const thirdColumn = testimonials.slice(6, 9)
+
+const TestimonialsColumn = (props: { className?: string; testimonials: typeof testimonials }) => (
+  <div>
+    {props.testimonials.map(({ text, imageSrc, name, username }) => (
+      <div key={text}>
+        <div>{text}</div>
+        <div>
+          <Image src={imageSrc} alt={name} width={40} height={40} />
+          <div>
+            <div>{name}</div>
+            <div>{username}</div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+);
+
 export const Testimonials = () => {
-  return null;
+  return (
+    <section>
+      <div>
+        <div>
+          <div>
+            <div></div>
+          </div>
+          <h2>What our users say</h2>
+          <p>From intuitive design to powerful features, our app has become an essential tool for users around the world.</p>
+        </div>
+        <div>
+          <TestimonialsColumn testimonials={firstColumn} />
+          <TestimonialsColumn testimonials={secondColumn} />
+          <TestimonialsColumn testimonials={thirdColumn} />
+        </div>
+      </div>
+    </section>
+  );
 };
