@@ -51,6 +51,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 4_Add Hero Style Classes.  
 5_Finish Logo Ticker Section.  
 6_Add Logo Ticker Style Classes.  
+7_Finish Product Show Case Section.  
+8_Add Product Show Case Style Classes.  
+  
+
+
 
 
 
