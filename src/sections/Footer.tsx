@@ -22,11 +22,11 @@ export const Footer = () => {
           <a href="#">Careers</a>
         </nav>
         <div className='flex justify-center gap-6 mt-6'>
-          <SocialX />
-          <SocialInsta />
-          <SocialLinkedIn />
-          <SocialPin />
-          <SocialYoutube />
+          <SocialX className="cursor-pointer" />
+          <SocialInsta className="cursor-pointer" />
+          <SocialLinkedIn className="cursor-pointer" />
+          <SocialPin className="cursor-pointer" />
+          <SocialYoutube className="cursor-pointer" />
         </div>
         <p className='mt-6'>&copy; 2025 Ahmed Alrefaey. All rights reserved.</p>
       </div>
